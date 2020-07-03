@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+h4, h5 {
+  background: rgba(0,0,0,0.4);
+  padding: 1em;
+  font-size: 54px;
+  margin: 0;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -1.4px;
+  transition: 0.15s all;
+  animation: 0.8s fadeInUp forwards;
+  opacity: 0;
+
+  &:hover {
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+}
+
+h5 {
+  font-size: 32px;
+}
+
+.data-provided-tag {
+  font-size: 15px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.4px;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5em;
+  font-weight: 500;
+}
+
+.video-container {
+  margin-bottom: 2em;
+  opacity: 0;
+  animation: 0.8s fadeInUp 1.75s forwards;
+}
+
+.main-section {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.97) 20%,rgba(0,0,0,0.1) 100%,rgba(0,0,0,0) 100%), url(./assets/img/section-background.jpg) no-repeat fixed;
+
+  &-header {
+    margin-top: 1em;
+    font-size: 54px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1.4px;
+    animation: 0.8s fadeInUp 1s forwards;
+    opacity: 0;
+    font-weight: 900;
+
+    &-covid {
+      font-weight: 900;
+      font-family: 'Roboto';
+      letter-spacing: 0px;
+      background: #d1c4e9;
+      color: #5e35b1;
+      padding: 0.15em 0.3em;
+      animation: 0.8s fadeInUp 1.6s forwards;
+      opacity: 0;
+      border-radius: 4px;
+    }
+  }
+}
+
+a {
+  color: #5e35b1;
+  text-decoration: none !important;
+}
+
+.second-section {
+  background: linear-gradient(to right, rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.1) 70%,rgba(0,0,0,0) 100%) no-repeat fixed;
+  background-color: #5e35b1;
+
+  &-content {
+    animation: 0.8s modalEnter forwards;
+  }
+
+  &-header {
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    animation: 0.8s modalEnter forwards;
+    opacity: 0;
+    font-size: 49px;
+    margin-bottom: 0;
+    margin-top: 2em;
+  }
+
+  .chart-container {
+    background: rgba(255, 255 , 255, 0.1);
+    border-radius: 8px;
+    * { font-family: 'Inter', sans-serif; }
+  }
+}
+
+.third-section {
+  background: linear-gradient(to right, rgba(0,0,0,0.91) 50%,rgba(0,0,0,0.1) 100%,rgba(0,0,0,0) 100%), url(./assets/img/social-distancing.jpg) no-repeat fixed;
+  background-color: #5e35b1;
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #e4e4e4;
+  }
+}
+
+header {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #afafaf;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.25px;
+  margin-top: 1em;
+}
+
+.help-step-2 {
+  background: linear-gradient(to right, rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.1) 70%,rgba(0,0,0,0) 100%) no-repeat fixed;
+  background-color: #35b16d;
+}
+
+.help-step-3 {
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 70%,rgba(0,0,0,0.1) 100%,rgba(0,0,0,0) 100%), url(./assets/img/staying-apart.jpg) no-repeat fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-color: #35b16d;
+}
+
+.cases-subtext {
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: #d1d1d1;
+}
+
+.centered {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  position: relative;
+  padding: 2em 12em;
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: auto;
+	box-shadow: 0px 5px 10px black;
+}
+
+h6 {
+  color: #c0c0c0;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	.main-section {
+    background: linear-gradient(to right, rgba(0,0,0,0.97) 100%,rgba(0,0,0,0.1) 100%,rgba(0,0,0,0) 100%), url(./assets/img/section-background.jpg) no-repeat fixed;
+  }
+}
+
+@keyframes fadeInUp {
+	from {
+			transform: translate3d(0,40px,0)
+	}
+
+	to {
+			transform: translate3d(0,0,0);
+			opacity: 1
+	}
+}
+
+@-webkit-keyframes fadeInUp {
+	from {
+			transform: translate3d(0,40px,0)
+	}
+
+	to {
+			transform: translate3d(0,0,0);
+			opacity: 1
+	}
+}
+
+@keyframes modalEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) perspective(0px) rotateX(0deg);
+  }
+}

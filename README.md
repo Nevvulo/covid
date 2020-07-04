@@ -1,4 +1,8 @@
 # Coronavirus Tracker
+Simple Coronavirus case tracker and general information application
+
+## Installation
+Simply clone this repository to your local machine using `git clone`, then open a terminal inside of the `covid` folder and run `npm start` (or one of the other scripts below).
 
 ## Tests
 This project has been tested on Chrome v83.0.4103.116 (Official Build) (64-bit) and works as intended. Most resolutions have been tested and this application is mobile-friendly.

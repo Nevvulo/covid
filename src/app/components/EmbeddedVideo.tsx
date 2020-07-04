@@ -49,7 +49,7 @@ class EmbeddedVideo extends Component<IProps, IState> {
         const { src } = this.props;
         return (
             <div onMouseOut={(e) => this.mouseOut(e)} onMouseMove={(e) => this.mouseMoved(e)} ref={this.element} className='centered video-container'>
-                <iframe onClick={(e) => console.log(e)} style={style} allowFullScreen src={src} className='video centered'></iframe>
+                <iframe style={style} allowFullScreen src={src} className='video centered'></iframe>
             </div>
         );
     }
